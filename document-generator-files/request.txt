@@ -1,0 +1,27 @@
+oci fn function invoke --function-id <put-function-ocid-here> --file "-" --body '{
+    "requestType": "SINGLE",
+    "tagSyntax": "DOCGEN_1_0",
+    "data": {    
+      "source": "OBJECT_STORAGE",
+      "namespace": "<put-namespace-here>",
+      "bucketName": "fun_oci_functions_bucket",
+      "objectName": "birds.json",
+      "contentType": "application/json"
+    },
+    "template": {
+      "source": "OBJECT_STORAGE",
+      "namespace": "<put-namespace-here>",
+      "bucketName": "fun_oci_functions_bucket",
+      "objectName": "birds.docx",
+      "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    "output": {
+      "target": "OBJECT_STORAGE",
+      "namespace": "<put-namespace-here>",
+      "bucketName": "fun_oci_functions_bucket",
+      "objectName": "birds.pdf",
+      "contentType": "application/pdf"
+    }
+}' | jq
+
+

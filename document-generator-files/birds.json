@@ -1,0 +1,61 @@
+{"birds":
+  [
+     {
+          "birdName": "Penguin",
+          "birdImage": {
+               "source": "OBJECT_STORAGE",
+               "objectName": "penguin.png",
+               "namespace": "idsvv7k2bdum",
+               "bucketName": "fun_oci_functions_bucket",
+               "mediaType": "image/png",
+               "height": "140px"
+             },
+          "funFacts": [
+               {
+                    "fact": "Not found in the Artic."
+               }
+          ]
+     },
+     {
+          "birdName": "Toucan",
+          "birdImage": {
+               "source": "OBJECT_STORAGE",
+               "objectName": "toucan.png",
+               "namespace": "idsvv7k2bdum",
+               "bucketName": "fun_oci_functions_bucket",
+               "mediaType": "image/png",
+               "height": "140px"
+             },
+          "funFacts": [
+               {
+                    "fact": "They love fruits. Not clear about loops."
+               },
+               {
+                    "fact": "Long tongue, up to 6 inches (15 cm)."
+               }
+          ]
+     },
+     {
+          "birdName": "Albatross",
+          "birdImage": {
+               "source": "OBJECT_STORAGE",
+               "objectName": "albatross.png",
+               "namespace": "idsvv7k2bdum",
+               "bucketName": "fun_oci_functions_bucket",
+               "mediaType": "image/png",
+               "height": "140px"
+             },
+          "funFacts": [
+               {
+                    "fact": "Large Wingspan. Up to 12 feet (3.7 meters)."
+               },
+               {
+                    "fact": "Can travel thousands of miles across the open ocean, often circling the globe."
+               },
+               {
+                    "fact": "Some live over 60 years."
+               }
+          ]
+     }
+  ]
+}
