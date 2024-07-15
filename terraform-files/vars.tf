@@ -1,5 +1,5 @@
 variable region { 
-    default = "us-ashburn-1" 
+    description  = "Region to use. Example: us-ashburn-1" 
 }
 
 variable compartment_ocid {

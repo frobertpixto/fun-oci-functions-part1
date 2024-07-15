@@ -2,14 +2,14 @@
 # Create the application 
 resource "oci_functions_application" "fun_oci_functions_app" {
   compartment_id = var.compartment_ocid
-  config = {
+  config         = {
   }
   display_name = "fun_oci_functions_app"
-  shape = "GENERIC_X86"
-  subnet_ids = [
+  shape        = "GENERIC_X86"
+  subnet_ids   = [
     var.vcn_subnet_ocid,
   ]
-  syslog_url = ""
+  syslog_url   = ""
   trace_config {
     domain_id  = ""
     is_enabled = "false"
@@ -40,7 +40,6 @@ resource "oci_logging_log" "app_log" {
   }
 }
 
-
 # Get the Pre-Built Function Listing of Document Generator
 # This is equivalent to the statement: List all Pre-Built Function Listings where the name = "Document Generator"
 data "oci_functions_pbf_listings" "pbf_listing_api" {
@@ -59,10 +58,10 @@ output "document_generator_listing_id" {
 # Create a Document Generator Pre-Built Function 
 resource "oci_functions_function" "fun_oci_function_document_generator" {
   application_id = oci_functions_application.fun_oci_functions_app.id
-  config = {
+  config         = {
   }
-  display_name = "fun_oci_function_document_generator"
-  memory_in_mbs = "1024"
+  display_name   = "fun_oci_function_document_generator"
+  memory_in_mbs  = "1024"
   provisioned_concurrency_config {
     strategy = "NONE"
   }
@@ -72,7 +71,7 @@ resource "oci_functions_function" "fun_oci_function_document_generator" {
   }
   timeout_in_seconds = "300"
   trace_config {
-    is_enabled = false
+    is_enabled   = false
   }
 }
 
