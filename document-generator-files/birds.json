@@ -5,7 +5,7 @@
           "birdImage": {
                "source": "OBJECT_STORAGE",
                "objectName": "penguin.png",
-               "namespace": "idsvv7k2bdum",
+               "namespace": "<put-namespace-here>",
                "bucketName": "fun_oci_functions_bucket",
                "mediaType": "image/png",
                "height": "140px"
@@ -21,7 +21,7 @@
           "birdImage": {
                "source": "OBJECT_STORAGE",
                "objectName": "toucan.png",
-               "namespace": "idsvv7k2bdum",
+               "namespace": "<put-namespace-here>",
                "bucketName": "fun_oci_functions_bucket",
                "mediaType": "image/png",
                "height": "140px"
@@ -40,7 +40,7 @@
           "birdImage": {
                "source": "OBJECT_STORAGE",
                "objectName": "albatross.png",
-               "namespace": "idsvv7k2bdum",
+               "namespace": "<put-namespace-here>",
                "bucketName": "fun_oci_functions_bucket",
                "mediaType": "image/png",
                "height": "140px"

@@ -1,7 +1,7 @@
 oci fn function invoke --function-id <put-function-ocid-here> --file "-" --body '{
     "requestType": "SINGLE",
     "tagSyntax": "DOCGEN_1_0",
-    "data": {    
+    "data": {
       "source": "OBJECT_STORAGE",
       "namespace": "<put-namespace-here>",
       "bucketName": "fun_oci_functions_bucket",
@@ -23,5 +23,3 @@ oci fn function invoke --function-id <put-function-ocid-here> --file "-" --body 
       "contentType": "application/pdf"
     }
 }' | jq
-
-
